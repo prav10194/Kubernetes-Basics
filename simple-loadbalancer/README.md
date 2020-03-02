@@ -1,9 +1,10 @@
-kubectl create -f deploy-definition.yaml
-kubectl expose deployment myapp-pod-2 --type=LoadBalancer --port=8080
+* kubectl create -f deploy-definition.yaml
 
-kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml
+* kubectl expose deployment myapp-pod-2 --type=LoadBalancer --port=8080
 
-cat <<EOF | kubectl create -f -
+* kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml
+
+* cat <<EOF | kubectl create -f -
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -18,4 +19,4 @@ data:
       - 192.168.64.100-192.168.64.200
 EOF
 
-minikube service myapp-pod-2 --url
+* minikube service myapp-pod-2 --url
