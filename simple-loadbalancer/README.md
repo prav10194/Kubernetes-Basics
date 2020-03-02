@@ -1,6 +1,6 @@
 * kubectl create -f deploy-definition.yaml
 
-* kubectl expose deployment myapp-pod-2 --type=LoadBalancer --port=8080
+* kubectl expose deployment myapp-pod-2 --type=LoadBalancer --port=80
 
 * kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml
 
