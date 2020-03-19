@@ -1,3 +1,5 @@
+Metadata labels (in Pod) = Spec selector (in Service)
+
 * kubectl create -f service-definiation.yaml 
 * kubectl create -f pod-definition.yaml
 * kubectl create -f pod-definition-2.yaml
