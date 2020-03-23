@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: hostpath-pd-2
+spec:
+ containers:
+ - image: nginx
+   name: hostpath-pd-2
+   volumeMounts:
+    #  path in pod container that should be saved in /demo of minikube or node
+   - mountPath: /data
+     name: test-volume
+ volumes:
+ - name: test-volume
+   persistentVolumeClaim:
+     claimName: myvol
