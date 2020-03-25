@@ -1,3 +1,7 @@
+In deployment.yaml, 
+
+spec.selector.matchLabels = spec.template.metadata.labels = spec.selector
+
 Metadata labels (in Pod) = Spec selector (in Service)
 
 * kubectl create -f service-definiation.yaml 
