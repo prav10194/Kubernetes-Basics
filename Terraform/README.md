@@ -17,4 +17,11 @@ variable "myList" {
         type = list
         default = [1,2,3]
 }
+
+variable "myBool" {
+        type = bool
+        default = false
+}
 ```
+
+
