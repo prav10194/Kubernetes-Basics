@@ -1,0 +1,8 @@
+AWS_ACCESS_KEY=""
+AWS_SECRET_KEY=""
+REGION="us-east-1"
+AMI="ami-0ee02acd56a52998e"
+INSTANCE_TYPE="t2.micro"
+INSTANCE_USERNAME="ubuntu"
+PATH_TO_PRIVATE_KEY="mykey"
+PATH_TO_PUBLIC_KEY="mykey.pub"
