@@ -8,12 +8,14 @@
 
 ```cmd
 oc create sa robot
+oc describe secret
 ```
 
 2. Get the secret
 
 ```cmd
 oc get secret | grep robot
+oc describe secret  <secret-name>
 ```
 
 Each service account automatically contains two secrets:
