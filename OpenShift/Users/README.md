@@ -28,6 +28,27 @@ oc policy add-role-to-user view system:serviceaccount:<project-name>:<service-ac
 oc policy add-role-to-user view system:serviceaccount:default:robot
 ```
 
+Confirm if the role is added by running the following command - 
+
+```cmd
+oc describe rolebinding.rbac -n default | grep robot
+```
+For more information ru the above command without the grep. You will see the following output - 
+
+```yaml
+...
+Name:         view-0
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  ClusterRole
+  Name:  view
+Subjects:
+  Kind            Name   Namespace
+  ----            ----   ---------
+  ServiceAccount  robot  default
+ ```
+ 
 4. Login using the token (secret from step 2)
 
 ```cmd
