@@ -21,7 +21,7 @@ Each service account automatically contains two secrets:
 - An API token
 - Credentials for the OpenShift Container Registry
 
-3. Give permission to the sa
+3. Give permission to the sa (local binding and not cluster binding)
 
 ```cmd
 oc policy add-role-to-user view system:serviceaccount:<project-name>:<service-account>
@@ -33,3 +33,6 @@ oc policy add-role-to-user view system:serviceaccount:default:robot
 ```cmd
 oc login --token=<API_TOKEN>
 ```
+
+
+See all cluster roles [here](https://docs.openshift.com/container-platform/4.1/authentication/using-rbac.html#default-roles_using-rbac)
