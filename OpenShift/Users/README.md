@@ -13,7 +13,7 @@ oc create sa robot
 2. Get the secret
 
 ```cmd
-oc get robot | grep robot
+oc get secret | grep robot
 ```
 
 Each service account automatically contains two secrets:
@@ -28,7 +28,7 @@ oc policy add-role-to-user view system:serviceaccount:<project-name>:<service-ac
 oc policy add-role-to-user view system:serviceaccount:default:robot
 ```
 
-4. Login using the token
+4. Login using the token (secret from step 2)
 
 ```cmd
 oc login --token=<API_TOKEN>
