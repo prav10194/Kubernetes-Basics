@@ -32,3 +32,5 @@ To test run the following command and you will see an event generated
 ```cd
 kubectl run alpine -n default --image=alpine --restart='Never' -- sh -c "sleep 600"
 ```
+
+To create custom rules - https://github.com/falcosecurity/charts/tree/master/falco#loading-custom-rules
