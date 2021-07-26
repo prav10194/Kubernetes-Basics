@@ -1,5 +1,14 @@
 ## Bash basics
 
+#### Making your script global
+
+```cmd
+cp <script_name>.sh /usr/local/bin/
+cd <any_other_directory>
+sh <script_name>.sh #to run the script from some other directory
+```
+
+
 #### Split functionality
 
 ```cmd
